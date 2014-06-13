@@ -29,7 +29,7 @@
                 parts = /^([0-9]*.?[0-9]+)(px|em)$/.exec(pair)
                 if (parts != null) {
                     number = Number(parts[1]);
-                    if (number + "" != "NaN") {
+                    if ( ! isNaN(number)) {
                         value = parts[2];
                     }
                 }
